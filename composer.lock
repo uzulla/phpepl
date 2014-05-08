@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fieryprophet/php-sandbox.git",
-                "reference": "43d040b13ccacb334debb73917d53c2d255227ae"
+                "reference": "99c2eaf3f99c5657f317673cf537987ed3bd14ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fieryprophet/php-sandbox/zipball/43d040b13ccacb334debb73917d53c2d255227ae",
-                "reference": "43d040b13ccacb334debb73917d53c2d255227ae",
+                "url": "https://api.github.com/repos/fieryprophet/php-sandbox/zipball/99c2eaf3f99c5657f317673cf537987ed3bd14ad",
+                "reference": "99c2eaf3f99c5657f317673cf537987ed3bd14ad",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,7 @@
                     "PHPSandbox\\": "src/"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -52,7 +52,7 @@
                 "sandbox",
                 "whitelist"
             ],
-            "time": "2014-03-19 21:20:37"
+            "time": "2014-05-07 13:07:45"
         },
         {
             "name": "jeremeamia/FunctionParser",
@@ -98,16 +98,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "dev-master",
+            "version": "0.9.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "700847e2951942200b479c413aa2984b5364799b"
+                "reference": "5960ecfc105011b8d1bfedf7647b4b8989dbcb4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/700847e2951942200b479c413aa2984b5364799b",
-                "reference": "700847e2951942200b479c413aa2984b5364799b",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/5960ecfc105011b8d1bfedf7647b4b8989dbcb4c",
+                "reference": "5960ecfc105011b8d1bfedf7647b4b8989dbcb4c",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                     "PHPParser": "lib/"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -139,7 +139,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2013-09-28 11:21:30"
+            "time": "2014-04-19 20:26:05"
         }
     ],
     "packages-dev": [

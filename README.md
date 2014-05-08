@@ -9,6 +9,8 @@ for my testing.
 
 Created by: [@mrjoelkemp](http://www.twitter.com/mrjoelkemp)
 
+[GitHub](https://github.com/mrjoelkemp/phpepl)
+
 ### License
 
 MIT

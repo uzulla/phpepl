@@ -12833,7 +12833,6 @@ module.exports.saveCode = function () {
     .find('span')
       .html('Code Saved!');
 
-  window.mixpanel.track('Code Saved');
 };
 
 // Preload where you last left off
@@ -12865,10 +12864,9 @@ var
 
     // Safeguard to always use the live eval on the remote server
     // and the unsafe dev version otherwise.
-    isLiveEnv      = window.location.host.indexOf('cloudcontrolled.com') !== -1,
+    isLiveEnv      = 1, //window.location.host.indexOf('cloudcontrolled.com') !== -1,
     evalURL        = isLiveEnv ? sandboxed : unsafe,
 
-    mixpanel       = window.mixpanel || {},
     editor         = require('./editor'),
     editorHelpers  = require('./helpers/EditorHelpers'),
     storageHelpers = require('./helpers/StorageHelpers');
@@ -12906,7 +12904,6 @@ function processCode () {
   $('.spinner').fadeIn('fast');
 
   // Track it
-  mixpanel.track('Code Run', {'code': code});
 
   sendingCode(code)
     .done(processResponse)
@@ -12945,7 +12942,6 @@ function processFatalError (error) {
 
   editorHelpers.setOutput(textLine[0], true);
   editorHelpers.showLineError(textLine[1]);
-  mixpanel.track('Error', {'error' : error.responseText});
 }
 
 function checkForShortcuts (e) {
@@ -12959,7 +12955,6 @@ function checkForShortcuts (e) {
   if (e.which === 83 && (e.ctrlKey || e.metaKey)) {
     storageHelpers.saveCode();
     e.preventDefault();
-    mixpanel.track('Save Shortcut');
   }
 }
 },{"./editor":3,"./helpers/EditorHelpers":4,"./helpers/StorageHelpers":5,"jquery":1}]},{},[6])

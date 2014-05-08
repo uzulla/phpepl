@@ -2,38 +2,15 @@
 <html>
   <head>
     <meta charset='UTF-8'>
-    <meta content='Mr. Joel Kemp' name='author'>
-    <meta content='A PHP read evaluate print loop (REPL) for executing PHP code online in the browser.' name='description'>
-    <meta content='PHP, repl, programming, read evaluate print loop, phpepl, online repl' name='keywords'>
     <title>PHPepl: The PHP REPL</title>
     <link href='vendor/codemirror/lib/codemirror.css?ver=3.18' rel='stylesheet'>
     <link href='css/styles.css?ver=1.5' rel='stylesheet'>
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-36055599-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-      (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-      mixpanel.init("89e9d9cd5a49c0529bec222da9b37385");
-      mixpanel.track("Landing Page");
-    </script>
   </head>
   <body>
-    <!-- Built by Mr. Joel Kemp, @mrjoelkemp, www.mrjoelkemp.com -->
-    <!-- Yes, there's php -a, but it stinks. I really wanted a repl to play with particular parts of PHP. -->
     <div class='container'>
       <div class='header'>
         <div class='title'>
           <span class='code'>PHPepl: The PHP repl</span>
-          <a href='https://github.com/mrjoelkemp/phpepl'>
-            <img alt='Fork me on GitHub' src='https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png' style='position: absolute; top: 0; right: 0; border: 0;'>
-          </a>
         </div>
       </div>
       <div class='codebox'>
@@ -67,20 +44,6 @@
         <span class='code'>⌘ + Enter or Ctrl + Enter</span>
         <button>RUN</button>
       </div>
-      <div class='fork-info'>
-        <span>Fork the project and serve locally for an unsandboxed experience</span>
-      </div>
-      <div class='credits'>
-        <a class='twitter-follow-button' href='https://twitter.com/mrjoelkemp'>Follow @mrjoelkemp</a>
-        <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-        </script>
-      </div>
-    </div>
-    <div class='mixpanel'>
-      <a href='http://mixpanel.com/f/partner' style='display:none'>
-        <img alt='Real Time Web Analytics' src='http://mixpanel.com/site_media/images/partner/badge_blue.png'>
-      </a>
     </div>
   </body>
   <script src='vendor/codemirror/lib/codemirror.js?ver=3.18'></script>

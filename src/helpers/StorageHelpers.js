@@ -12,7 +12,6 @@ module.exports.saveCode = function () {
     .find('span')
       .html('Code Saved!');
 
-  window.mixpanel.track('Code Saved');
 };
 
 // Preload where you last left off

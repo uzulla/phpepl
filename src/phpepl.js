@@ -19,7 +19,6 @@ var
     isLiveEnv      = window.location.host.indexOf('cloudcontrolled.com') !== -1,
     evalURL        = isLiveEnv ? sandboxed : unsafe,
 
-    mixpanel       = window.mixpanel || {},
     editor         = require('./editor'),
     editorHelpers  = require('./helpers/EditorHelpers'),
     storageHelpers = require('./helpers/StorageHelpers');
@@ -56,8 +55,6 @@ function processCode () {
 
   $('.spinner').fadeIn('fast');
 
-  // Track it
-  mixpanel.track('Code Run', {'code': code});
 
   sendingCode(code)
     .done(processResponse)
@@ -96,7 +93,6 @@ function processFatalError (error) {
 
   editorHelpers.setOutput(textLine[0], true);
   editorHelpers.showLineError(textLine[1]);
-  mixpanel.track('Error', {'error' : error.responseText});
 }
 
 function checkForShortcuts (e) {
@@ -110,6 +106,5 @@ function checkForShortcuts (e) {
   if (e.which === 83 && (e.ctrlKey || e.metaKey)) {
     storageHelpers.saveCode();
     e.preventDefault();
-    mixpanel.track('Save Shortcut');
   }
 }
